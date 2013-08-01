@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;" /> 
+		<title>test one</title>
+	</head>
+	<body>
+		我的名字是<{{$username}}>,我的性别是<{{$sex}}>。
+		<table id="table">
+			<[{each($person) $key $val}]>
+				<tr>
+					<td><{{$key}}></td><td><{{$val}}></td>
+				</tr>
+			<[{/each}]>
+		</table>
+	
+	</body>
+</html>
