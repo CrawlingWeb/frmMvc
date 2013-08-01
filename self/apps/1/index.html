@@ -7,13 +7,6 @@
 	</head>
 	<body>
 		我的名字是<{{$username}}>,我的性别是<{{$sex}}>。
-		<table id="table">
-			<[{each($person) $key $val}]>
-				<tr>
-					<td><{{$key}}></td><td><{{$val}}></td>
-				</tr>
-			<[{/each}]>
-		</table>
-	
+                {xunhuan("person","table")}
 	</body>
 </html>
